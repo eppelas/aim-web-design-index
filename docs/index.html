@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aim web design index</title>
+    <style>
+      :root {
+        --bg: #f2f2f2;
+        --ink: #0f0f0f;
+        --muted: #5a5a5a;
+        --line: rgba(15, 15, 15, 0.16);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      .wrap {
+        min-height: 100vh;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(22px, 2.6vw, 34px);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      .note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: 160ms ease;
+      }
+      .card:hover {
+        background: #111;
+        color: #fff;
+      }
+      .idx {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+      .name {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .meta {
+        margin-top: 8px;
+        font-size: 12px;
+        opacity: 0.7;
+      }
+      .footer {
+        margin-top: 28px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      code {
+        background: rgba(0, 0, 0, 0.06);
+        padding: 2px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="top">
+        <h1>aim web design</h1>
+        <p class="note">single GitHub Pages repo, multi-style index routing</p>
+      </header>
+
+      <section class="grid">
+        <a class="card" href="./54/">
+          <div class="idx">style 54</div>
+          <div class="name">minimal ru grid</div>
+          <div class="meta">ready</div>
+        </a>
+      </section>
+
+      <p class="footer">
+        future pages go to <code>/docs/{index}/</code> (e.g. <code>/docs/29/</code>, <code>/docs/48/</code>) and become available as <code>.../29/</code>, <code>.../48/</code>.
+      </p>
+    </main>
+  </body>
+</html>
