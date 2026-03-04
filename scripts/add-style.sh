@@ -19,7 +19,7 @@ if [ ! -d "$SOURCE_PROJECT" ]; then
 fi
 
 pushd "$SOURCE_PROJECT" >/dev/null
-npm run build -- --base="/$STYLE_INDEX/"
+npm run build -- --base="./"
 popd >/dev/null
 
 if [ -d "$TARGET_DIR" ] && [ "$(find "$TARGET_DIR" -mindepth 1 | wc -l | tr -d ' ')" != "0" ]; then
