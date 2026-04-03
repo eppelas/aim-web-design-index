@@ -3,11 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page System Factory</title>
-    <script type="module" crossorigin src="./assets/index-BiY-NUeR.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-zvFTV5MP.css">
+    <title>aim web design index</title>
+    <style>
+      :root {
+        --bg: #f2f2f2;
+        --ink: #0f0f0f;
+        --muted: #5a5a5a;
+        --line: rgba(15, 15, 15, 0.16);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      .wrap {
+        min-height: 100vh;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(22px, 2.6vw, 34px);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      .note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: 160ms ease;
+      }
+      .card:hover {
+        background: #111;
+        color: #fff;
+      }
+      .idx {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+      .name {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .meta {
+        margin-top: 8px;
+        font-size: 12px;
+        opacity: 0.7;
+      }
+      .meta-badge {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 4px 8px;
+        border: 1px solid #b12a1d;
+        color: #b12a1d;
+        background: rgba(177, 42, 29, 0.06);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 1;
+      }
+      .footer {
+        margin-top: 28px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      code {
+        background: rgba(0, 0, 0, 0.06);
+        padding: 2px 6px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <main class="wrap">
+      <header class="top">
+        <h1>aim web design</h1>
+      </header>
+
+      <section class="grid">
+        <a class="card" href="./03/">
+          <div class="idx">style 03</div>
+          <div class="name">ascii + motherland</div>
+          <div class="meta">live</div>
+        </a>
+        <a class="card" href="./29/">
+          <div class="idx">style 29</div>
+          <div class="name">kampong organic type</div>
+          <div class="meta">live</div>
+        </a>
+        <a class="card" href="./48/">
+          <div class="idx">style 48</div>
+          <div class="name">lab spring &amp; 3D illustration</div>
+          <div class="meta">live</div>
+        </a>
+        <a class="card" href="./36/">
+          <div class="idx">style 36</div>
+          <div class="name">data arch</div>
+          <div class="meta">live</div>
+        </a>
+        <a class="card" href="./54/">
+          <div class="idx">style 54</div>
+          <div class="name">grid with column</div>
+          <div class="meta">ready</div>
+        </a>
+        <a class="card" href="./57/">
+          <div class="idx">style 57</div>
+          <div class="name">voxel</div>
+        </a>
+        <a class="card" href="./99/">
+          <div class="idx">style 99</div>
+          <div class="name">dot concept</div>
+          <div class="meta">live</div>
+        </a>
+      </section>
+
+    </main>
   </body>
 </html>
